@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="head" class="flex">
+        <div id="title_display"></div>
+        <div id="pin_display"></div>
+        <div>LOGIN</div>
+        <div>REGISTER</div>
+    </div>
+    
+    <div id="homePage">
+        <h1>How Does QuizApp Work?</h1>
+        <div class="grid">
+        <div id="create_quiz_button">
+            <h3>Create Quiz</h3>
+            <p>It only takes minutes to create
+                 a quiz on any topic.</p>
+        </div>
+        <div id="join_quiz_button">
+            <h3>Play</h3>
+            <p>Game on! Join a quiz with a
+                 PIN provided by the admin</p>
+        </div>
+        </div>
+    </div>
+
+    <div id="enter_page">
+        <div>Enter your name: <input type="text" id="nameInput"></div>
+        <div>Enter Quiz Pin: <input type="text" id="pinInput"></div>
+        <div id="enter_quiz_button">Enter</div>
+    </div>
+    <div id="createPage">
+        <div>Quiz Title: <input type="text" id="titleInput" placeholder="Enter title for unique quiz..."></div>
+        <div class="grid">
+            <div id="upload_quiz_button">
+                <h3>Choose from quiz bank</h3>
+                <p>
+                    This includes a set of questions for 
+                    different topics you may be interested in.
+                </p>
+            </div>
+            <div id="type_quiz">
+                <h3>Make a unique quiz</h3>
+                <p>You will need to type out your questions.
+                    Every multiple choice question can
+                    have only one answer.
+                </p>
+            </div>
+        </div>   
+    </div>
+
+    <div id="typePage">
+        <div>Question: <input type="text" id="questionInput"></div>
+        <div>Answer1: <input type="text" id="answer1Input"><input type="checkbox" name="check" id="ans1check"></div>
+        <div>Answer2: <input type="text" id="answer2Input"><input type="checkbox" name="check" id="ans2check"></div>
+        <div>Answer3: <input type="text" id="answer3Input"><input type="checkbox"name="check" id="ans3check"></div>
+        <div>Answer4: <input type="text" id="answer4Input"><input type="checkbox" name="check" id="ans4check"></div>
+        <div id="add_question_button">Add Question</div>
+        <div id="quiz_page_button">View Quiz</div>     
+    </div>
+
+    <div id="quizPage">
+        <ul>
+            <li>
+                <div class="questionDisplay">Question</div>
+                <div class="answersDisplay">
+                    <div>A.) Answer1</div>
+                    <div>A.) Answer1</div>
+                    <div>A.) Answer1</div>
+                    <div>A.) Answer1</div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    <div id="UserquizPage">
+        <ul>
+        <div>
+        <div>CSS Stands for...</div>
+        <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+        <label for="question-1-answers-A">A) Computer Styled Sections </label>
+        </div>
+        
+        <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+            <label for="question-1-answers-B">B) Cascading Style Sheets</label>
+        </div>
+        
+        <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+            <label for="question-1-answers-C">C) Crazy Solid Shapes</label>
+        </div>
+        
+        <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+            <label for="question-1-answers-D">D) None of the above</label>
+        </div>
+    
+    </ul>
+    </div>
+    <div id="QuizBankDiv">
+        <div>
+            <h3>Quiz Titles</h3>
+            <p>Click on title to select quiz</p>
+            <ol id="quizList">
+
+            </ol>
+        </div>
+
+    </div>
+    <div id= "QuizBankDisplay">
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

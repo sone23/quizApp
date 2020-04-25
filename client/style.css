@@ -1,0 +1,134 @@
+#head {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: DodgerBlue;
+    color: gold;
+  }
+  
+#head > div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.grid{
+    display: flex;
+}
+.grid > div{
+    width: auto;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: beige;
+    padding: 10px;
+    width: 90%;
+}
+#homePage{
+    text-align: center; 
+}
+
+#enter_page{
+    display: none;
+}
+
+#createPage{
+    display: none;
+    text-align: center;
+}
+
+#createPage > div {
+    padding: 10px;
+    align-content: center;
+}
+
+
+#add_question_button{
+    padding: 10px;
+    background-color: dodgerblue;
+    align-content: center;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+#quiz_page_button, #enter_quiz_button{
+    padding: 10px;
+    background-color: dodgerblue;
+    align-content: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 10px;
+}
+input {
+    width: 30%;
+    margin: 20px;
+    align-self: center;
+}
+
+#typePage {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: none;
+    text-align: center;
+  }
+
+body {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+
+#UserquizPage{
+    text-align: left;
+    display: none;
+}
+
+#quizPage{
+    text-align: left;
+    display: none;
+}
+
+.answersDisplay{
+    display: flex;
+    padding: 20px;
+}
+
+.answersDisplay div{
+    margin: 20px;
+}
+
+.button{
+    padding: 10px;
+    background-color: dodgerblue;
+    margin: 20px;
+}
+
+#QuizBankDiv{
+    display: none;
+}
+
+#QuizBankDiv{
+    text-align: left;
+    padding: 20px;
+}
+
+.select{
+    text-align: right;
+
+    background-color: dodgerblue;
+}
+
+#QuizBankDisplay{
+    text-align:  left;
+}
+li{
+    background-color: floralwhite;
+    margin: 10px;
+}
+
+.answers{
+    padding: 10px;
+}
